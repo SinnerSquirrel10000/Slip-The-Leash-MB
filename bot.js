@@ -106,11 +106,11 @@ if(config.mongodbURL || process.env.MONGO){
   useNewUrlParser: true,
   useUnifiedTopology: true,
   }).then(async () => {
-    console.log('\x1b[32m%s\x1b[0m', `|    🍔 Connected MongoDB!`)
+    console.log('\x1b[32m%s\x1b[0m', `|    🍔 Connected!`)
   }).catch((err) => {
-    console.log('\x1b[32m%s\x1b[0m', `|    🍔 Failed to connect MongoDB!`)})
+    console.log('\x1b[32m%s\x1b[0m', `|    🍔 Failed to connect!`)})
   } else {
-  console.log('\x1b[32m%s\x1b[0m', `|    🍔 Error MongoDB!`)
+  console.log('\x1b[32m%s\x1b[0m', `|    🍔 Error!`)
   }
 
 
@@ -123,7 +123,7 @@ app.get('/', (req, res) => {
 });
 app.listen(port, () => {
   console.log(`🔗 Listening to RTX: http://localhost:${port}`);
-  console.log(`✨ Happy New Year Welcome To 2024`);
+  console.log(`✨ Slip The Leash Music Bot`);
 });
 printWatermark();
 
